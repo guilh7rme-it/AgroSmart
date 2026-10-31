@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroSmart | Monitoramento Inteligente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 AgroSmart</h1>
+    <p>Sistema Inteligente de Monitoramento de Hortas</p>
+  </header>
+
+  <main>
+    <section class="painel">
+      <h2>Monitoramento em tempo real</h2>
+      <p id="status">Aguardando conexão...</p>
+
+      <div class="indicadores">
+        <article class="card">
+          <h3>💧 Umidade do Solo</h3>
+          <strong id="solo">--%</strong>
+        </article>
+
+        <article class="card">
+          <h3>🌡️ Temperatura</h3>
+          <strong id="temperatura">-- °C</strong>
+        </article>
+
+        <article class="card">
+          <h3>🌤️ Umidade do Ar</h3>
+          <strong id="umidade-ar">--%</strong>
+        </article>
+
+        <article class="card">
+          <h3>🚿 Irrigação</h3>
+          <strong id="irrigacao">Aguardando...</strong>
+        </article>
+      </div>
+    </section>
+
+<div id="alerta-solo" role="alert" hidden></div>
+
+    <section class="historico">
+      
+
+        
+<section class="painel">
+  <h2>🚿 Controle da Irrigação</h2>
+  <p>Selecione como deseja controlar a irrigação.</p>
+
+  <div class="controles">
+    <button id="btn-automatico">
+      🔄 Automático
+    </button>
+
+    <button id="btn-ligar">
+      💧 Ligar irrigação
+    </button>
+
+    <button id="btn-desligar">
+      ⛔ Desligar irrigação
+    </button>
+  </div>
+
+  <p id="mensagem-controle"></p>
+</section>
+
+      <h2>Histórico dos Sensores</h2>
+      <canvas id="grafico"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>AgroSmart © 2026 | Projeto Acadêmico de IoT</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+node_modules/
+.env
+**/.env
+*.log
+firmware/supabase-config.txt
+firmware/wokwi-link.txt
